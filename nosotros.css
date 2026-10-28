@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f8;
+  }
+  
+
+/* BANNER PRINCIPAL */
+.banner {
+    width: 100%;
+    min-height: 250px;
+
+    background: linear-gradient(
+        135deg,
+        #4a0d27,
+        #8f1748
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    color: white;
+}
+
+/* CONTENIDO DEL BANNER */
+.banner-contenido h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner-contenido p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+  
+  .menu {
+  background-color: #4a0d27;
+  padding: 5px;
+  }
+  
+  .menu > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .menu > ul > li {
+  position: relative;
+  }
+  
+  .menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-size: 17px;
+  }
+  
+  .menu > ul > li > a:hover {
+  background-color: #8f1748;
+  }
+  
+
+  
+  .nosotros {
+  
+  min-height: 600px;
+  
+  background-color: #fbd9e5;
+  
+  padding: 50px 30px;
+  
+  text-align: center;
+  
+  position: relative;
+  
+  }
+  
+  .nosotros h1 {
+  
+  color: #8f1748;
+  
+  font-size: 40px;
+  
+  margin-bottom: 30px;
+  
+  }
+  
+
+  
+  .contenedor {
+  
+  position: absolute;
+  
+  top: 50px;
+  
+  left: 40px;
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  gap: 12px;
+  
+  width: 230px;
+  
+  }
+  
+  .contenedor a {
+  
+  width: 230px;
+  
+  background-color: white;
+  
+  color: #333;
+  
+  text-decoration: none;
+  
+  padding: 16px 10px;
+  
+  border: 2px solid #8f1748;
+  
+  border-radius: 8px;
+  
+  font-size: 16px;
+  
+  font-weight: bold;
+  
+  text-align: center;
+  
+  
+  }
+  
+  .contenedor a:hover {
+  
+  background-color: #8f1748;
+  
+  color: white;
+  
+  transform: translateX(5px);
+  
+  }
+  
+  
+
+
+#contenedor-imagen {
+
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    width: 650px;
+    text-align: center;
+}
+
+
+
+#contenedor-imagen img {
+
+    display: none;
+    width: 550px;
+    height: 550px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .banner-contenido h1 {
+        font-size: 28px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .datos-personales,
+    .sobre-mi {
+        padding: 20px;
+    }
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi rutina | Sleep Time and Study</title>
+    <link rel="stylesheet" href="st.css">
+    <script src="st.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>🌙 Mi rutina de sueño</h1>
+        <p>Organiza tus actividades para descansar mejor.</p>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="reloj.html">Mi reloj</a>
+        <a href="rutina.html" class="activo">Mi rutina</a>
+        <a href="progreso.html">Mi progreso</a>
+    </nav>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h2>Mis actividades</h2>
+            <p>
+                Marca las actividades que quieres realizar antes de dormir.
+                Puedes agregar tus propias actividades.
+            </p>
+
+            <div id="listaRutina">
+                <label class="actividad">
+                    <input type="checkbox" class="habito" value="Preparar el uniforme y la maleta">
+                    Preparar el uniforme y la maleta 🎒
+                </label>
+
+                <label class="actividad">
+                    <input type="checkbox" class="habito" value="Terminar las tareas">
+                    Terminar las tareas 📚
+                </label>
+
+                <label class="actividad">
+                    <input type="checkbox" class="habito" value="Dejar el celular">
+                    Dejar el celular antes de dormir 📵
+                </label>
+
+                <label class="actividad">
+                    <input type="checkbox" class="habito" value="Relajarme antes de dormir">
+                    Relajarme antes de dormir 🧘
+                </label>
+
+                <label class="actividad">
+                    <input type="checkbox" class="habito" value="Cepillarme los dientes">
+                    Cepillarme los dientes 🪥
+                </label>
+            </div>
+
+            <div class="agregar-actividad">
+                <h3>➕ Agregar mi propia actividad</h3>
+
+                <label for="nuevaActividad">
+                    Escribe una actividad para tu rutina:
+                </label>
+
+                <input
+                    type="text"
+                    id="nuevaActividad"
+                    placeholder="Ej. Leer durante 10 minutos"
+                    maxlength="100"
+                >
+
+                <button type="button" onclick="agregarActividad()">
+                    Agregar actividad
+                </button>
+
+                <p id="mensajeActividad" role="status"></p>
+            </div>
+
+            <button type="button" onclick="guardarRutina()">
+                Guardar mi rutina
+            </button>
+
+            <p id="mensajeRutina" role="status"></p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>⭐ Mi progreso</h2>
+            <p>Puntos acumulados: <strong id="puntos">0</strong></p>
+            <p id="resumenHabitos">
+                Marca tus actividades para comenzar.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

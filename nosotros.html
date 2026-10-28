@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nosotros</title>
+
+    <link rel="stylesheet" href="nosotros.css">
+
+</head>
+
+<body>
+
+
+<header class="banner">
+    <div class="banner-contenido">
+        <h1>Sleep Time and Study</h1>
+        <p>Duerme mejor, aprende más y alcanza tus metas</p>
+    </div>
+</header>
+
+    <nav class="menu">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+
+            <li>
+                <a href="evidencias.html">Evidencias</a>
+            </li>
+
+            <li>
+                <a href="st.html">ST</a>
+            </li>
+
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+
+          
+    </nav>
+
+
+
+
+    <main class="nosotros">
+
+
+
+        <div class="contenedor">
+
+            <a href="#" onclick="mostrarImagen(1); return false;">
+                Misión
+            </a>
+
+            <a href="#" onclick="mostrarImagen(2); return false;">
+                Visión
+            </a>
+
+            <a href="#" onclick="mostrarImagen(3); return false;">
+                Pregunta Problema
+            </a>
+
+            <a href="#" onclick="mostrarImagen(4); return false;">
+                Objetivo General
+            </a>
+
+            <a href="#" onclick="mostrarImagen(5); return false;">
+                Objetivos Específicos
+            </a>
+
+            <a href="#" onclick="mostrarImagen(6); return false;">
+                Cronograma
+            </a>
+
+        </div>
+
+
+        <div id="contenedor-imagen">
+
+            <img id="img1"
+                 src="MISIÓN.jpg"
+                 alt="Imagen 1">
+
+            <img id="img2"
+                 src="VISIÓN.jpg"
+                 alt="Imagen 2">
+
+            <img id="img3"
+                 src="PREGUNTA.jpg"
+                 alt="Imagen 3">
+
+            <img id="img4"
+                 src="GENERAL.jpg"
+                 alt="Imagen 4">
+
+            <img id="img5"
+                 src="ESPECIFICOS.jpg"
+                 alt="Imagen 5">
+
+            <img id="img6"
+                 src="lobo.jpg"
+                 alt="Imagen 6">
+
+        </div>
+
+
+    </main>
+
+
+    <script>
+
+        function mostrarImagen(num) {
+
+            document.getElementById("img1").style.display = "none";
+            document.getElementById("img2").style.display = "none";
+            document.getElementById("img3").style.display = "none";
+            document.getElementById("img4").style.display = "none";
+            document.getElementById("img5").style.display = "none";
+            document.getElementById("img6").style.display = "none";
+
+            document.getElementById("img" + num).style.display = "block";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

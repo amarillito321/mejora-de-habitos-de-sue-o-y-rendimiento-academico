@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi reloj | Sleep Time and Study</title>
+    <link rel="stylesheet" href="st.css">
+    <script src="st.js" defer></script>
+</head>
+<body>
+
+<header>
+
+    <h1>Mi reloj de descanso</h1>
+    <p>Organiza tus horas de sueño 💗</p>
+</header>
+
+<nav>
+    <a href="st.html">Inicio</a>
+    <a class="activo" href="reloj.html">Mi reloj</a>
+    <a href="rutina.html">Mi rutina</a>
+    <a href="progreso.html">Mi progreso</a>
+</nav>
+
+<main>
+    <section class="tarjeta">
+        <h2>⏰ Configura tu horario</h2>
+        <p>Selecciona la hora a la que deseas dormir y despertar.</p>
+
+        <label for="horaDormir">Hora para dormir:</label>
+        <input type="time" id="horaDormir" value="21:00">
+
+        <label for="horaDespertar">Hora para despertar:</label>
+        <input type="time" id="horaDespertar" value="06:00">
+
+        <button onclick="guardarHorario()">Guardar horario</button>
+        <button onclick="activarDescanso()">Activar modo descanso</button>
+
+        <p id="mensajeHorario" class="nota"></p>
+    </section>
+
+    <section class="mensaje">
+        <h2>🌙 Consejo para esta noche</h2>
+        <p>
+            Intenta alejarte de las pantallas antes de dormir
+            y realiza una actividad tranquila para prepararte
+            para el descanso.
+        </p>
+        <a class="boton" href="rutina.html">Ir a mi rutina</a>
+    </section>
+</main>
+
+<div id="pantallaDescanso" class="pantalla-descanso">
+    <div>
+        <div class="luna">🌙</div>
+        <h2>¡Modo descanso activado!</h2>
+        <div id="horaPantalla" class="hora-grande">21:00</div>
+        <p>Es momento de dejar las distracciones y prepararte para dormir.</p>
+        <p>✨ Mañana será un nuevo día para aprender.</p>
+        <button onclick="desactivarDescanso()">Volver a la página</button>
+    </div>
+</div>
+
+<footer>
+    <p>Sleep Time and Study 💗</p>
+</footer>
+
+</body>
+</html>

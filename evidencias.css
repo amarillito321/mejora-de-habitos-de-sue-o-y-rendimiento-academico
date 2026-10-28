@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+}
+
+
+
+/* BANNER PRINCIPAL */
+.banner {
+    width: 100%;
+    min-height: 250px;
+
+    background: linear-gradient(
+        135deg,
+        #4a0d27,
+        #8f1748
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    color: white;
+}
+
+/* CONTENIDO DEL BANNER */
+.banner-contenido h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner-contenido p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.menu {
+    background-color: #4a0d27;
+    padding: 5px;
+}
+
+
+.menu > ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.menu > ul > li {
+    position: relative;
+}
+
+
+.menu a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 25px;
+
+    font-size: 17px;
+}
+
+
+.menu > ul > li > a:hover {
+    background-color: #8f1748;
+}
+
+
+
+
+.menu-lateral {
+
+    display: none;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 100%;
+
+    width: 230px;
+
+    background-color: #fbd9e5;
+
+    list-style: none;
+
+    padding: 10px;
+
+    z-index: 10;
+}
+
+
+.submenu:hover .menu-lateral {
+    display: block;
+}
+
+
+.menu-lateral li {
+    margin: 5px 0;
+}
+
+
+.menu-lateral a {
+
+    background-color: #fbd9e5;
+
+    color: #333;
+
+    padding: 13px;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+
+.menu-lateral a:hover {
+
+    background-color: #8f1748;
+
+    color: white;
+}
+
+
+
+.evidencias {
+
+    min-height: 600px;
+
+    background-color: #fbd9e5;
+
+    padding: 60px 30px;
+
+    text-align: center;
+}
+
+
+.evidencias h1 {
+
+    color: #8f1748;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+
+
+
+.contenedor {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+
+.contenedor a {
+
+    width: 180px;
+
+    background-color: white;
+
+    color: #333;
+
+    text-decoration: none;
+
+    padding: 20px;
+
+    border: 2px solid #8f1748;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.contenedor a:hover {
+
+    background-color: #8f1748;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+
+
+
+#contenedor-evidencias {
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+}
+
+
+.cuadro-evidencia {
+
+    display: none;
+
+    width: 900px;
+
+    max-width: 95%;
+
+    min-height: 700px;
+
+    background-color: white;
+
+    border: 3px solid #8f1748;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    align-items: center;
+
+    gap: 35px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    text-align: left;
+}
+
+
+
+
+.cuadro-evidencia img {
+
+    width: 400px;
+
+    height:  auto;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 2px solid #f0b6ca;
+}
+
+
+
+
+.texto {
+
+    flex: 1;
+}
+
+
+.texto h2 {
+
+    color: #8f1748;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+.texto p {
+
+    color: #444;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .banner-contenido h1 {
+        font-size: 28px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .datos-personales,
+    .sobre-mi {
+        padding: 20px;
+    }
+}
+
+
+

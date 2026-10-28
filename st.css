@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f7;
+    color: #493044;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+    background: linear-gradient(135deg, #f5a9d0, #b99af7);
+}
+
+
+header h1 {
+    font-size: 29px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* BARRA DE MENÚ */
+nav {
+    background: #842563;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+    background: #c04491;
+}
+
+/* CONTENIDO */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+section {
+    margin-bottom: 22px;
+    scroll-margin-top: 75px;
+}
+
+h2 {
+    color: #a83279;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #842563;
+    margin: 12px 0;
+}
+
+p {
+    margin: 8px 0 12px;
+}
+
+.centrado {
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    background: linear-gradient(135deg, #fbcfe8, #e9d5ff);
+    border-radius: 20px;
+    padding: 32px 22px;
+    text-align: center;
+}
+
+.bienvenida h2 {
+    font-size: 28px;
+}
+
+/* TARJETAS DE INICIO */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.opcion {
+    background: white;
+    border: 2px solid #f5c5e0;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #493044;
+    transition: 0.3s;
+}
+
+.opcion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 14px #b879a533;
+}
+
+.opcion span {
+    font-size: 40px;
+}
+
+.opcion h3 {
+    color: #a83279;
+}
+
+/* TARJETAS GENERALES */
+.tarjeta {
+    background: white;
+    padding: 23px;
+    border: 2px solid #f5c5e0;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px #b879a51a;
+}
+
+/* FORMULARIOS */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+input[type="time"],
+input[type="date"],
+select {
+    display: block;
+    width: 100%;
+    max-width: 430px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d8a0c3;
+    border-radius: 10px;
+    background: #fff8fc;
+    color: #493044;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    accent-color: #c04491;
+}
+
+/* BOTONES Y ENLACES */
+button,
+.boton {
+    display: inline-block;
+    background: #c04491;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 17px;
+    margin: 8px 5px 4px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.boton:hover {
+    background: #842563;
+}
+
+.secundario {
+    background: #8064b4;
+}
+
+/* RUTINA */
+.actividad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 9px 0;
+    background: #fff0f7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.actividad input {
+    flex-shrink: 0;
+}
+
+/* PUNTOS */
+.recompensas {
+    text-align: center;
+    background: linear-gradient(135deg, white, #fce7f3);
+}
+
+.estrella {
+    font-size: 48px;
+    margin: 10px;
+}
+
+.puntos {
+    display: inline-block;
+    background: #fce7f3;
+    color: #842563;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* GRÁFICO */
+.barra-fila {
+    display: grid;
+    grid-template-columns: 45px 1fr 45px;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.barra {
+    height: 15px;
+    background: #f3d7e8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #f5a9d0, #a78bfa);
+    border-radius: 10px;
+}
+
+.registro {
+    background: #fff0f7;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.nota {
+    font-size: 13px;
+    color: #84677d;
+}
+
+/* MENSAJE FINAL Y PIE DE PÁGINA */
+.mensaje {
+    background: #eadcff;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+}
+
+footer {
+    background: #842563;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+    font-size: 14px;
+}
+
+/* MODO DESCANSO */
+.pantalla-descanso {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(160deg, #191638, #39265f);
+}
+
+.pantalla-descanso.activa {
+    display: flex;
+}
+
+.pantalla-descanso h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.luna {
+    font-size: 60px;
+}
+
+.hora-grande {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.pantalla-descanso button {
+    background: #f5a9d0;
+    color: #48203d;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+
+    main {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    .tarjeta {
+        padding: 17px;
+    }
+
+    .hora-grande {
+        font-size: 48px;
+    }
+}
+.actividad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #fff0f7;
+    border-radius: 8px;
+    color: #633451;
+}
+
+.actividad input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #c34b91;
+}
+
+.agregar-actividad {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff7fb;
+    border: 1px solid #efc6df;
+    border-radius: 10px;
+}
+
+#nuevaActividad {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d8a5c3;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.agregar-actividad button,
+.contenedor button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #b74488;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.agregar-actividad button:hover,
+.contenedor button:hover {
+    background-color: #913367;
+}
+
+#mensajeActividad,
+#mensajeRutina {
+    color: #873765;
+    font-weight: bold;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi progreso | Sleep Time and Study</title>
+    <link rel="stylesheet" href="st.css">
+    <script src="st.js" defer></script>
+</head>
+<body>
+
+<header>
+ 
+    <h1>Mi progreso</h1>
+    <p>Conoce tus hábitos y cómo te sientes 📚</p>
+</header>
+
+<nav>
+    <a href="st.html">Inicio</a>
+    <a href="reloj.html">Mi reloj</a>
+    <a href="rutina.html">Mi rutina</a>
+    <a class="activo" href="progreso.html">Mi progreso</a>
+</nav>
+
+<main>
+    <section class="tarjeta">
+        <h2>📚 ¿Cómo me siento hoy?</h2>
+        <p>Registra tu descanso y tu experiencia durante el día.</p>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha">
+
+        <label for="horas">¿Cuántas horas dormiste?</label>
+        <select id="horas">
+            <option value="">Selecciona una opción</option>
+            <option value="5">Menos de 6 horas</option>
+            <option value="6.5">Entre 6 y 7 horas</option>
+            <option value="8">Entre 7 y 9 horas</option>
+            <option value="9.5">Más de 9 horas</option>
+        </select>
+
+        <label for="energia">¿Cómo estuvo tu energía?</label>
+        <select id="energia">
+            <option value="">Selecciona una opción</option>
+            <option>Alta</option>
+            <option>Media</option>
+            <option>Baja</option>
+        </select>
+
+        <label for="concentracion">¿Cómo estuvo tu concentración?</label>
+        <select id="concentracion">
+            <option value="">Selecciona una opción</option>
+            <option>Muy buena</option>
+            <option>Buena</option>
+            <option>Regular</option>
+            <option>Baja</option>
+        </select>
+
+        <button onclick="guardarRegistro()">Guardar mi registro</button>
+        <p id="mensajeRegistro" class="nota"></p>
+    </section>
+
+    <section class="tarjeta">
+        <h2>📊 Mi progreso semanal</h2>
+        <p>Horas de sueño registradas durante los últimos siete días.</p>
+
+        <div id="grafico"></div>
+
+        <h3>Mis últimos registros</h3>
+        <div id="registros"></div>
+    </section>
+
+    <section class="mensaje">
+        <h2>💗 Recuerda</h2>
+        <p>
+            Este registro te ayuda a observar tus hábitos.
+            No determina por sí solo tus calificaciones ni demuestra
+            que dormir más siempre produzca mejores resultados académicos.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Sleep Time and Study 💗</p>
+</footer>
+
+</body>
+</html>
